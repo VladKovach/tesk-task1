@@ -1,0 +1,67 @@
+@import '/src/components/MainComponent/mainComponent.scss';
+.customers-list {
+  &__item {
+    list-style-type: none;
+
+    // padding: 23px 0;
+    &-li {
+      display: flex;
+      border-bottom: 1px solid rgba(238, 238, 238, 1);
+      height: 69px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & p {
+        text-align: left;
+        padding: 0 1px;
+      }
+      &__name {
+        width: $name-width;
+      }
+      &__company {
+        width: $company-width;
+        @media (max-width:440px) {
+          display: none;
+        }
+      }
+      &__phone {
+        width: $phone-width;
+        @media (max-width:552px) {
+          display: none;
+        }
+      }
+      &__email {
+        width: $email-width;
+      }
+      &__country {
+        width: $country-width;
+        @media (max-width: 741px) {
+          display: none;
+        }
+      }
+      &__status {
+        &.button {
+          width: $status-width;
+          height: 29px;
+          cursor: pointer;
+        }
+
+        // &.checkbox {
+        //   width: 30px;
+        //   height: 30px;
+        // }
+
+        &.active {
+          background: rgba(22, 192, 152, 0.38);
+          color: #008767;
+          border: 1px solid rgba(0, 176, 135, 1);
+        }
+        &.inactive {
+          background: #ffc5c5;
+          color: #df0404;
+          border: 1px solid rgba(223, 4, 4, 1);
+        }
+      }
+    }
+  }
+}

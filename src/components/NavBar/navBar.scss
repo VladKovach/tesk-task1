@@ -1,0 +1,36 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  &__btn {
+    font-size: 12px;
+    line-height: 100%;
+    font-weight: 500;
+    height: 25px;
+    width: 25px;
+    background: #f5f5f5;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.right{
+      transform: rotate(180deg);
+    }
+    &:hover {
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      background: #5932ea;
+      color: white;
+    }
+    &.spread__btn {
+      background: transparent;
+      border: none;
+      &:hover {
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        background: #5932ea;
+        color: white;
+      }
+    }
+  }
+}
